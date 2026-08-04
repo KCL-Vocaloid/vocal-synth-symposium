@@ -9,6 +9,20 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
 <style>
+.video-embed {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  border-radius: 14px;
+  overflow: hidden;
+}
+.video-embed iframe {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  border: none;
+}
 /* ============================================================
    Vocal Synth Symposium 2026 — static site styles
    Palette: Hatsune Miku (teal / navy / soft pink) with KCL red accent
@@ -955,18 +969,9 @@ code { font-family: ui-monospace, SFMono-Regular, Menlo, monospace; background: 
         <div class="directions">
           <h3>Getting to the venue</h3>
           <p class="muted">Great Hall, King’s Building, King’s College London (enter via Strand Building, Strand, London WC2R 1ES)</p>
-          <figure class="placeholder placeholder--video" aria-label="Venue directions video placeholder">
-            <div class="video-frame">
-              <span class="play">▶</span>
-              <span class="placeholder__tag">YouTube Embed Placeholder</span>
-              <span class="placeholder__hint">
-                Venue directions video · replace this block with
-                <code>&lt;iframe src="https://www.youtube.com/embed/VIDEO_ID" …&gt;&lt;/iframe&gt;</code>
-                inside <code>#directions-embed</code>
-              </span>
-            </div>
-            <div id="directions-embed" hidden></div>
-          </figure>
+           <div class="video-embed">
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/q5yqn7cDvwA?si=J1W-UOWWbb2mBeTW" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+           </div>    
         </div>
       </div>
 
