@@ -118,6 +118,11 @@ code { font-family: ui-monospace, SFMono-Regular, Menlo, monospace; background: 
   border-radius: 8px; background: var(--grad-btn); color: white; font-size: 16px;
   box-shadow: var(--shadow-sm);
 }
+img.brand__mark {
+  background: transparent;
+  box-shadow: none;
+  object-fit: contain;
+}
 .brand__text { font-size: 15px; color: var(--ink); }
 .brand__year { color: var(--miku-teal-deep); }
 
@@ -748,7 +753,7 @@ code { font-family: ui-monospace, SFMono-Regular, Menlo, monospace; background: 
 <header class="topbar">
   <div class="container topbar__inner">
     <a href="#top" class="brand">
-      <span class="brand__mark">◐</span>
+      <img class="brand__mark" src="assets/favicon.png" alt="Vocal Synth Symposium logo" />
       <span class="brand__text">Vocal Synth Symposium <span class="brand__year">2026</span></span>
     </a>
     <nav class="topnav">
