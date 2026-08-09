@@ -167,12 +167,14 @@ code { font-family: ui-monospace, SFMono-Regular, Menlo, monospace; background: 
 .banner { padding: 24px 0 0; }
 .placeholder--banner {
   aspect-ratio: 16 / 5;
-  min-height: 180px;
+  min-height: 120px;
 }
 .placeholder--banner .placeholder__label { display: flex; }
-
-@media (max-width: 640px) {
-  .placeholder--banner { aspect-ratio: 16 / 8; }
+.placeholder--banner img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
 }
 
 /* ============================================================
@@ -1214,16 +1216,15 @@ code { font-family: ui-monospace, SFMono-Regular, Menlo, monospace; background: 
         </article>
 
         <article class="organiser">
-          <div class="organiser__mark" aria-hidden="true">KCLVS</div>
+          <img class="organiser__mark" src="https://kcl-vocaloid.github.io/favicon.ico" alt="KCL Vocaloid Society logo" />
           <div class="organiser__body">
             <h3 class="organiser__name">KCL Vocaloid Society</h3>
             <p class="organiser__meta">
               <a href="https://kcl-vocaloid.github.io/" target="_blank" rel="noopener">kcl-vocaloid.github.io ↗</a>
             </p>
             <p class="organiser__bio muted">
-              [ Placeholder intro — a short paragraph about the KCL Vocaloid Society: its student community,
-              events, and interest in vocal synthesis, virtual idols, and fan culture across the UK, Japan, and China.
-              Replace with a final blurb approved by KCLVS. ]
+              
+Founded in 2024, King's College London Vocaloid Society (KCLVS) is a student-led university organisation focused on Vocaloid culture, the first of its kind in London. Our mission is to build a community for all university-aged enthusiasts of vocal synthesis technology along with its spin-off subculture, as well as academics and producers in the field. For more information about our events and work, please refer to our website.
             </p>
           </div>
         </article>
