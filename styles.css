@@ -240,6 +240,10 @@ code { font-family: ui-monospace, SFMono-Regular, Menlo, monospace; background: 
 .btn--primary:hover { background: var(--miku-teal); transform: translateY(-2px); box-shadow: 0 10px 30px -12px rgba(31, 168, 160, 0.55); }
 .btn--ghost { background: transparent; color: var(--ink); border: 1.5px solid var(--border-strong); }
 .btn--ghost:hover { border-color: var(--accent); color: var(--accent); }
+.btn--register {
+  padding: 22px 38px;
+  font-size: 20px;
+}
 
 /* ============================================================
    RESERVATION TICKET
